@@ -1,69 +1,84 @@
 # FederatedLearningFramework
-[![Python](https://img.shields.io/badge/Langage-Python-3776AB.svg)](https://www.python.org/)
-[![MIT License](https://img.shields.io/badge/Licence-MIT-orange.svg)](https://opensource.org/licenses/MIT)
-[![CI/CD](https://img.shields.io/badge/CI/CD-Github%20Actions-blue.svg)](https://github.com/FederatedLearningFramework)
+A decentralized machine learning framework for distributed model training and evaluation.
 
-## Description
+## Overview
 
-Le FederatedLearningFramework est un framework de learning fédéré conçu pour l'apprentissage de modèles sur des données distribuées. Il permet à plusieurs participants de collaborer pour former un modèle commun sans partager leurs données sensibles. Ce framework est conçu pour être scalable, sécurisé et facile à utiliser.
+The FederatedLearningFramework is a comprehensive platform for federated learning, enabling the training of models on distributed data while maintaining data privacy and security. This framework addresses the challenge of training machine learning models on large-scale datasets while adhering to data sharing and storage regulations. By leveraging decentralized architecture, FederatedLearningFramework provides a scalable and secure solution for model training and evaluation, ensuring collaboration among multiple parties without compromising data integrity.
 
-## Fonctionnalités
+## Features
 
-* Gestion des données distribuées
-* Protocole de communication sécurisé entre les participants
-* Formation de modèles avancés
-* Évaluation des performances des modèles
-* Support pour les modèles de machine learning les plus courants
+* **Decentralized Architecture**: Enables secure and private model training on distributed data.
+* **Flexible Model Support**: Supports various machine learning models and algorithms.
+* **Data Confidentiality**: Maintains data confidentiality and integrity during training and evaluation.
+* **Scalability**: Designed for large-scale distributed data and model training.
+* **Collaborative Environment**: Facilitates collaboration among multiple parties for model training and evaluation.
+* **Secure Data Sharing**: Enables secure data sharing and storage while maintaining data privacy.
+* **Real-time Evaluation**: Provides real-time evaluation and monitoring of model performance.
 
-## Installation
+## Getting Started
 
-Pour installer le FederatedLearningFramework, exécutez la commande suivante dans votre terminal :
+### Prerequisites
+- Python 3.8 or higher
+- pip 21.2 or higher
+- TensorFlow 2.4 or higher
+- Keras 2.4 or higher
+
+### Installation
 ```bash
+# Clone the repository
+git clone https://github.com/FederatedLearningFramework
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Install TensorFlow and Keras
+pip install tensorflow keras
 ```
-## Usage
 
-Voici un exemple de utilisation du framework :
-```python
-from src.main import FederatedLearning
+### Usage
+```bash
+# Run the FederatedLearningFramework
+python src/main.py
 
-# Créer un objet FederatedLearning
-fl = FederatedLearning()
+# Train a model using the framework
+python src/training.py --model_name "my_model" --data_path "/path/to/data"
 
-# Ajouter des participants
-fl.add_participant("participant1")
-fl.add_participant("participant2")
-
-# Charger les données
-fl.load_data()
-
-# Former un modèle
-fl.train_model()
-
-# Évaluer les performances du modèle
-fl.evaluate_model()
+# Evaluate model performance
+python src/evaluation.py --model_name "my_model" --data_path "/path/to/data"
 ```
-## Architecture du projet
 
-Le FederatedLearningFramework est composé de plusieurs composants :
+## Architecture
+The FederatedLearningFramework consists of the following key components:
 
-* `src/main.py` : Fichier principal du framework
-* `src/models.py` : Modèles utilisés pour l'apprentissage
-* `src/data.py` : Gestion des données distribuées
-* `src/communication.py` : Protocole de communication entre les participants
-* `src/training.py` : Fonctions de formation des modèles
-* `src/evaluation.py` : Fonctions d'évaluation des modèles
+* `src/main.py`: The entry point for the framework, responsible for initializing the decentralized architecture and managing model training and evaluation.
+* `src/training.py`: Handles model training using decentralized algorithms and data.
+* `src/evaluation.py`: Evaluates model performance using decentralized metrics and data.
+* `src/communication.py`: Manages secure data sharing and storage between parties.
 
-## Contribuer
+## API Reference
+The FederatedLearningFramework provides the following public interfaces:
 
-Vous souhaitez contribuer au FederatedLearningFramework ? Merci de suivre les étapes suivantes :
+* `FederatedLearningFramework.train(model_name, data_path)`: Trains a model using decentralized algorithms and data.
+* `FederatedLearningFramework.evaluate(model_name, data_path)`: Evaluates model performance using decentralized metrics and data.
 
-1. Fork ce dépôt
-2. Créez une nouvelle branche pour votre contribution
-3. Effectuez les modifications nécessaires
-4. Exécutez les tests pour vous assurer que tout fonctionne correctement
-5. Soumettez votre contribution en créant une nouvelle pull request
+## Testing
+```bash
+# Run tests using the pytest framework
+pytest tests/
+```
 
-## Licence
+## Contributing
+1. Fork the repository
+2. Create a feature branch
+3. Commit changes
+4. Push and open a PR
 
-Le FederatedLearningFramework est licencié sous la licence MIT. Vous pouvez l'utiliser et la modifier librement, à condition de respecter les termes de la licence.
+## License
+MIT License
+
+Quality standards:
+* Professional, confident tone
+* No filler words or vague statements
+* Specific and actionable instructions
+* Well-formatted Markdown
+* English only, never bilingual
