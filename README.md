@@ -82,3 +82,6 @@ Quality standards:
 * Specific and actionable instructions
 * Well-formatted Markdown
 * English only, never bilingual
+## License
+
+MIT License
